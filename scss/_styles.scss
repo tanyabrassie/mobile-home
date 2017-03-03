@@ -1,0 +1,211 @@
+$peach: #ffe4cc;
+$black: #383030;
+
+
+@font-face {
+	font-family:'nickainley';
+	src: url(fonts/nickainley.otf);
+}
+
+
+a {
+	text-decoration: none;
+	color: $black;
+	font-weight: bold;
+
+	&:hover {
+		text-decoration: none;
+		opacity: .6;
+  		transition-duration: 800ms;
+	}
+}
+
+body  {
+	font-size: 100%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	background-color: #09dfff;
+	color: $black;
+	
+}
+
+.headline {
+	font-weight: 900;
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	font-style: italic;
+	text-align: center;
+	padding: 65px 0 0 0;
+	line-height: 1.1;
+
+	@media (min-width: 500px) {
+		font-size: 2.25em;
+		letter-spacing: 10px;
+	}	
+
+	&__slogan {
+		font-family: "nickainley";
+		text-align: center;
+		padding-top: 20px;
+		font-size: 1em;
+	}	
+}	
+
+.sub-text {
+	margin: auto;
+	width: 80%;
+	max-width: 500px;
+
+	&__cta {
+		text-align: center;
+		font-family: "nickainley";
+		font-size: 2em;
+	}
+
+	&__copy {
+		line-height: 1.4em;
+		padding: 30px 0 20px 0;
+		font-size: .9em;
+		text-align: center;
+	}
+}
+
+.main-container {
+	margin: auto;
+	max-width: 1280px;
+	width: 85%;
+	background: #fff;
+
+	// @media (min-width: 500px) {
+	// 	border-right: 75px solid #09dfff;
+	// 	border-left: 75px solid #09dfff;
+	// }	
+}
+
+.inside-container {
+	max-width: 800px;
+	margin: auto;
+}
+
+.header {
+	background: #09dfff;
+	text-align: center;
+	height: 35px;
+
+	@media (min-width: 500px) {
+		height: 75px;
+	}	
+	
+	&__logo {
+		width: 125px;
+		margin-top: 13px;
+
+		@media (min-width: 500px) {
+			width: 145px;
+			margin-top: 48px;
+		}
+	
+	}	
+}
+
+
+
+.divider {
+	margin: 30px 0;
+	border-top: 1px dashed #000;
+}
+
+.form {
+	width: 70%;
+	background-color: #e3fdff;
+	margin: auto;
+	padding: 30px;
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"]:checked + label {
+		outline: 2px solid #000;	
+	}
+
+	
+	&__label {
+		display: block;
+		padding: 5px;
+		font-size: .8em;
+	}
+
+	&__title {
+		font-size: 1em;	
+		font-weight: 700;
+		font-style: italic;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}
+
+	&__colors, &__add-ons {
+		margin: 15px 0;
+	}
+}
+
+.form__swatch {
+	height: 30px;
+	width: 62px;
+	border: 2px solid #fff;;
+	display: inline-block;
+	margin: 5px;
+
+	&:hover {
+		outline: 2px solid #383030;
+	}
+}
+
+.swatch--yellow {
+	@extend .form__swatch;
+	background-color: #d3d400;
+}
+
+.swatch--seafoam {
+	@extend .form__swatch;
+	background-color: #aafffd;
+}
+
+.swatch--teal{
+	@extend .form__swatch;
+	background-color: #09dfff;
+}
+
+.swatch--red {
+	@extend .form__swatch;
+	background-color: #ff0000;
+}
+
+.swatch--pink {
+	@extend .form__swatch;
+	background-color: #ffc6ae;
+}
+
+.swatch--black {
+	@extend .form__swatch;
+	background-color: $black;
+}
+
+
+.footer {
+	margin-top: 100px;
+	height: 45px;
+	background: $black;
+	color: #fff;
+
+	&__text {
+		color: #A9A29D;
+		text-align: center;
+		padding: 15px;
+		font-size: 12px;
+		vertical-align: middle;
+		display: block;
+		margin: auto;
+	}
+}

@@ -46,7 +46,7 @@
 					<div class="headline__info-window" id="info-window">
 						<strong class="info-headline">Model Information</strong>
 						<p class="info-text">Pictured below is the <span class="info-title">Mobile Home 2038</span> with the Rugged Luxury Expansion Pack.</p>
-						<em class="info-price">MSRP $5,000-%9,4320</em>
+						<em class="info-price">MSRP starting at $59,050</em>
 					</div>
 
 				</div>
@@ -60,7 +60,7 @@
 			</section>
 
 			<section class="order" id="order-form">
-			<h2>Customize Your 
+			<h2 class="order__title">1. Choose Your Model</h2>
 			<div class="svg-container">
 
 
@@ -158,10 +158,11 @@
 
 			<form class="form" id="order-form">
 				<h2 class="form__title">
-					Customize Your Home
+					2. Choose Your Preferences
 				</h2>
-				<section>	
-				<fieldset class="form__colors">
+				<section class="form__colors group">	
+				<div class="form__color-group">
+				<fieldset class="form__swatches">
 					<legend class="form__label">Upper Accent Stripe</legend>
 
 					<input type="radio" value="#d3d400" name="topstripe" id="top-color-a" checked="checked" swatch-class="body-stripe-top">	
@@ -188,8 +189,8 @@
 					<label class="swatch--black" for="top-color-f">
 					</label>								
 				</fieldset>		
-
-				<fieldset class="form__colors">
+			
+				<fieldset class="form__swatches">
 					<legend class="form__label">Main Body Color</legend>
 
 						<input type="radio" value="#d3d400" name="bodystripe" id="color-a" swatch-class="body-stripe">	
@@ -216,8 +217,9 @@
 						<label class="swatch--black" for="color-f">
 						</label>
 				</fieldset>	
-
-				<fieldset class="form__colors">
+				</div>
+				<div class="form__color-group">
+				<fieldset class="form__swatches">
 					<legend class="form__label">Bottom Accent Stripe</legend>
 
 						<input type="radio" value="#d3d400" name="bodystripebottom" id="bottom-color-a" swatch-class="body-stripe-bottom">	
@@ -244,8 +246,8 @@
 						<label class="swatch--black" for="bottom-color-f">
 						</label>
 				</fieldset>	
-
-				<fieldset class="form__colors">
+				</div>
+				<fieldset class="form__swatches">
 					<legend class="form__label">Door Color</legend>
 
 						<input type="radio" value="#d3d400" name="doorcolor" id="door-color-a" swatch-class="door">	
@@ -306,9 +308,12 @@
 			<button type="submit" form="order-form" name="formbutton" formmethod="post" formaction="" formtarget="_self" value="Place Order">Place Order</button>
 			</form>
 		</section>
+		</div>
+
 		<footer class="footer">
 			 <a class="footer__text" href="http://incahoots.nyc/"> Made with care by inCahoots!</a> <!-- <img class="footer__logo" src="images/handshake.jpg"/> -->
 		</footer>	
+		</div>
 	</body>
 
 

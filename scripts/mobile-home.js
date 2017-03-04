@@ -24,19 +24,41 @@ swatchOptions.change(function () {
 });
 
 
+//Make order form appear 
+var $orderForm = $('#order-form');
+var $orderButton = $('#order-button');
 
 
-var $mobileHomeContainer = $($(".svg-container")[0]);
-var $mobileHome = $($(".body-elements")[0]);
+$orderButton.click(function() {
+	$orderForm.css("display", "block");
 
-$(window).on("scroll", function(e) {
-	if ($(this).scrollTop() > 198) {
-		$mobileHomeContainer.css( {"position": "fixed", "top": 0, "padding": "20px 0", "width": "85%", "border-bottom": "2px solid black"});
-
-	} else {
-		$mobileHomeContainer.css({"position": "initial", "padding-bottom": "0px", "width": "inherit", "border-bottom": "0px solid black"});
-	}
 });
+
+var $infoWindow = $('#info-window');
+var $infoIcon = $('#info-icon');
+
+$infoIcon.mouseover(function(){
+	
+	$infoWindow.css("display", "block");
+
+});
+
+$infoIcon.mouseout(function (){
+	$infoWindow.css("display", "none");
+});
+
+
+// var $mobileHomeContainer = $($(".svg-container")[0]);
+// var $mobileHome = $($(".body-elements")[0]);
+
+// $(window).on("scroll", function(e) {
+// 	if ($(this).scrollTop() > 198) {
+// 		$mobileHomeContainer.css( {"position": "fixed", "top": 0, "padding": "20px 0", "width": "85%", "border-bottom": "2px solid black"});
+
+// 	} else {
+// 		$mobileHomeContainer.css({"position": "initial", "padding-bottom": "0px", "width": "inherit", "border-bottom": "0px solid black"});
+// 	}
+// });
 
 
 

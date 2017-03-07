@@ -143,7 +143,6 @@ body  {
 		z-index: 100;
 
 		&:hover {
-			background-color: #fff;
 			border: 1px solid $black;
 		}
 	}
@@ -297,6 +296,7 @@ body  {
 	margin-top: -20px;
 	padding: 5%;
 	box-sizing: border-box;
+	box-shadow: 6px 6px 0px 0px #383030;
 
 	&__title {
 		font-size: 1.3em;

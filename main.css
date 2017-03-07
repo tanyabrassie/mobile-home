@@ -197,11 +197,10 @@ body {
 }
 /* line 145, scss/_styles.scss */
 .headline__cta:hover {
-  background-color: #fff;
   border: 1px solid #383030;
 }
 
-/* line 155, scss/_styles.scss */
+/* line 154, scss/_styles.scss */
 .main-container {
   margin: auto;
   max-width: 1280px;
@@ -209,70 +208,70 @@ body {
   background: #fff;
 }
 
-/* line 167, scss/_styles.scss */
+/* line 166, scss/_styles.scss */
 .inside-container {
   max-width: 800px;
   margin: auto;
 }
 
-/* line 172, scss/_styles.scss */
+/* line 171, scss/_styles.scss */
 .header {
   text-align: center;
   height: 60px;
 }
 @media (min-width: 500px) {
-  /* line 172, scss/_styles.scss */
+  /* line 171, scss/_styles.scss */
   .header {
     height: 75px;
   }
 }
-/* line 180, scss/_styles.scss */
+/* line 179, scss/_styles.scss */
 .header__logo {
   width: 95px;
   margin-top: 9px;
 }
 @media (min-width: 500px) {
-  /* line 180, scss/_styles.scss */
+  /* line 179, scss/_styles.scss */
   .header__logo {
     width: 110px;
     margin-top: 15px;
   }
 }
 
-/* line 193, scss/_styles.scss */
+/* line 192, scss/_styles.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 200, scss/_styles.scss */
+/* line 199, scss/_styles.scss */
 .divider {
   margin: 30px 0;
   border-top: 1px dashed #000;
 }
 
-/* line 205, scss/_styles.scss */
+/* line 204, scss/_styles.scss */
 .form {
   width: 85%;
   margin: auto;
   padding: 30px;
 }
-/* line 210, scss/_styles.scss */
+/* line 209, scss/_styles.scss */
 .form input[type="radio"] {
   display: none;
 }
-/* line 214, scss/_styles.scss */
+/* line 213, scss/_styles.scss */
 .form input[type="radio"]:checked + label {
   outline: 2px solid #000;
 }
-/* line 219, scss/_styles.scss */
+/* line 218, scss/_styles.scss */
 .form__label {
   display: block;
   padding: 5px;
   font-size: .8em;
 }
-/* line 225, scss/_styles.scss */
+/* line 224, scss/_styles.scss */
 .form__title {
   font-size: 1.3em;
   letter-spacing: 1px;
@@ -281,17 +280,17 @@ body {
   color: #e50c0c;
   line-height: 1.4;
 }
-/* line 234, scss/_styles.scss */
+/* line 233, scss/_styles.scss */
 .form__swatches, .form__add-ons {
   margin: 15px 0;
 }
-/* line 238, scss/_styles.scss */
+/* line 237, scss/_styles.scss */
 .form__color-group {
   float: left;
   width: 50%;
 }
 
-/* line 244, scss/_styles.scss */
+/* line 243, scss/_styles.scss */
 .form__swatch-square, .swatch--yellow, .swatch--seafoam, .swatch--teal, .swatch--red, .swatch--pink, .swatch--black {
   height: 30px;
   width: 30px;
@@ -299,42 +298,42 @@ body {
   display: inline-block;
   margin: 5px;
 }
-/* line 251, scss/_styles.scss */
+/* line 250, scss/_styles.scss */
 .form__swatch-square:hover, .swatch--yellow:hover, .swatch--seafoam:hover, .swatch--teal:hover, .swatch--red:hover, .swatch--pink:hover, .swatch--black:hover {
   outline: 2px solid #383030;
 }
 
-/* line 256, scss/_styles.scss */
+/* line 255, scss/_styles.scss */
 .swatch--yellow {
   background-color: #d3d400;
 }
 
-/* line 261, scss/_styles.scss */
+/* line 260, scss/_styles.scss */
 .swatch--seafoam {
   background-color: #aafffd;
 }
 
-/* line 266, scss/_styles.scss */
+/* line 265, scss/_styles.scss */
 .swatch--teal {
   background-color: #09dfff;
 }
 
-/* line 271, scss/_styles.scss */
+/* line 270, scss/_styles.scss */
 .swatch--red {
   background-color: #ff0000;
 }
 
-/* line 276, scss/_styles.scss */
+/* line 275, scss/_styles.scss */
 .swatch--pink {
   background-color: #ffc6ae;
 }
 
-/* line 281, scss/_styles.scss */
+/* line 280, scss/_styles.scss */
 .swatch--black {
   background-color: #383030;
 }
 
-/* line 289, scss/_styles.scss */
+/* line 288, scss/_styles.scss */
 .order {
   display: none;
   border: 1px solid #383030;
@@ -346,6 +345,7 @@ body {
   margin-top: -20px;
   padding: 5%;
   box-sizing: border-box;
+  box-shadow: 6px 6px 0px 0px #383030;
 }
 /* line 301, scss/_styles.scss */
 .order__title {

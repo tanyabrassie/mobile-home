@@ -34,13 +34,13 @@ $orderButton.click(function() {
 
 	if (flag) {
 		$orderForm.css("display", "block");
-		$(this).css({"background": "#fff", "border": "1px solid #333"});
+		$(this).css({"background": "#383030", "color": "#fff"});
 
 		flag = false;
 
 	} else {
 		$orderForm.css("display", "none");
-		$(this).css({"background": "#fd7675", "border": "1px solid #fd7675"});
+		$(this).css({"background": "#fd7675"});
 
 		flag = true;
 	}	

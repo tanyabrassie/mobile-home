@@ -1,6 +1,3 @@
-$peach: #ffe4cc;
-$black: #383030;
-
 
 @font-face {
 	font-family:'nickainley';
@@ -32,17 +29,7 @@ body  {
 .headline {
 
 	&__main {
-		font-size: 1.8em;
-		letter-spacing: 3px;
-		font-style: italic;
-		text-align: center;
-		padding: 15px 0 0 0;
-		line-height: 1.3;
-
-		@media (min-width: 500px) {
-			font-size: 2em;
-			letter-spacing: 4px;
-		}
+		@extend .header--primary;
 	}	
 
 	&__slogan {
@@ -66,7 +53,7 @@ body  {
 
 	&__info-window {
 		display: none;
-		background-color: #fd7675;
+		background-color: $salmon;
 		width: 220px;
 		font-size: .7em;
 		padding: 20px;
@@ -125,26 +112,7 @@ body  {
 	}
 
 	&__cta {
-		font-weight: 600;
-		text-align: center;
-		font-size: 1em;
-		display: block;
-		background-color: #fd7675;
-		border: none;
-		height: 40px;
-		width: 160px;
-		outline: none;
-		margin: auto;
-		border-radius: 50px;
-		text-transform: uppercase;
-		font-style: italic;
-		cursor: help;
-		position: relative;
-		z-index: 100;
-
-		&:hover {
-			border: 1px solid $black;
-		}
+		@extend .button--primary;
 	}
 
 }	
@@ -197,8 +165,8 @@ body  {
 
 
 .divider {
-	margin: 30px 0;
-	border-top: 1px dashed #000;
+	margin: 30px 0 0;
+	border-top: 2px dotted $black;
 }
 
 .form {
@@ -206,49 +174,113 @@ body  {
 	margin: auto;
 	padding: 30px;
 
-	input[type="radio"] {
+	input[type="radio"], input[type="checkbox"] {
 		display: none;
 	}
 
+
 	input[type="radio"]:checked + label {
-		outline: 2px solid #000;	
+		outline: 1px solid $black;	
+	}
+
+	input[type="checkbox"]:checked + label {
+		background-color: $black;
+		color: #fff;
+		border-radius: 50px;
+
+	}
+
+	&__checkbox-label {
+		padding: 5px 10px;
+		margin: 5px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: .8em;
+		letter-spacing: 1px;
+
+		// &:hover {
+		// 	background-color: $salmon;
+		// 	border-radius: 50px;
+		// }
 	}
 
 	
 	&__label {
-		display: block;
+		display: inline-block;
 		padding: 5px;
 		font-size: .8em;
+		font-weight: bold;
+		letter-spacing: 1px;
+		vertical-align: bottom;
+	}
+
+	&__select, &__input {
+		 -webkit-appearance: none;
+ 		 -webkit-border-radius: 0px;
+ 		 border-radius: 0;
+ 		 border-bottom: 1px solid $black;
+ 		 border-top: none;
+ 		 border-left: none;
+ 		 border-right: none;
+ 		 width: 150px;
+ 		 height: 30px;
+ 		 padding: 0 5px 1px 5px;
+ 		 color: $black;
+ 		 background: #fff;
+ 		 font-size: .8em;
+
+ 		 &:focus {
+ 		 	outline: none;
+ 		 	border-bottom: 2px solid $black;
+
+ 		 }
+	}
+
+	&__select-wrapper {
+		display: inline-block;
+	}
+	&__select-wrapper::after {
+		content: url(images/triangle-down-04.svg);
+		position: absolute;
+	    width: 0; 
+	   
+	    height: 0; 
+	}
+
+	&__group {
+		margin: 10px 0;
 	}
 
 	&__title {
-		font-size: 1.3em;
-		letter-spacing: 1px;
-		font-family: monospace;
-		margin: 0px auto 30px;
-		color: #e50c0c;
-		line-height: 1.4;
-	}
-
-	&__swatches, &__add-ons {
-		margin: 15px 0;
+		@extend .header--secondary;
 	}
 
 	&__color-group {
 		float: left;
 		width: 50%;
 	}
+
+	&__submit {
+		@extend .button--primary;
+	}
+
 }
 
+.tanya:after {
+	content: attr(test-attrt) " .";
+}
+
+
+
 .form__swatch-square {
-	height: 30px;
-	width: 30px;
-	border: 2px solid #fff;;
+	height: 28px;
+	width: 28px;
+	border: 3px solid #fff;;
 	display: inline-block;
 	margin: 5px;
 
 	&:hover {
-		outline: 2px solid #383030;
+		outline: 1px solid #383030;
 	}
 }
 
@@ -283,6 +315,9 @@ body  {
 }
 
 
+.form__colors, .form__add-ons, .form__order-info {
+	@extend .form-section;
+}
 
 
 .order {
@@ -304,18 +339,10 @@ body  {
 		font-family: monospace;
 		margin: 30px auto;
 		width: 80%;
-		color: #e50c0c;
+		color: $salmon;
 		line-height: 1.4;
 	}
 }
-
-
-
-
-
-
-
-
 
 
 .footer {

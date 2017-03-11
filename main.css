@@ -62,34 +62,8 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'nickainley';
-  src: url(fonts/nickainley.otf);
-}
-/* line 11, scss/_styles.scss */
-a {
-  text-decoration: none;
-  color: #383030;
-  font-weight: bold;
-}
-/* line 16, scss/_styles.scss */
-a:hover {
-  text-decoration: none;
-  opacity: .6;
-  transition-duration: 800ms;
-}
-
-/* line 23, scss/_styles.scss */
-body {
-  font-size: 100%;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 300;
-  background-color: #fff2f2;
-  color: #383030;
-}
-
-/* line 34, scss/_styles.scss */
-.headline__main {
+/* line 4, scss/_patterns.scss */
+.header--primary, .headline__main {
   font-size: 1.8em;
   letter-spacing: 3px;
   font-style: italic;
@@ -98,13 +72,83 @@ body {
   line-height: 1.3;
 }
 @media (min-width: 500px) {
-  /* line 34, scss/_styles.scss */
-  .headline__main {
+  /* line 4, scss/_patterns.scss */
+  .header--primary, .headline__main {
     font-size: 2em;
     letter-spacing: 4px;
   }
 }
-/* line 48, scss/_styles.scss */
+
+/* line 18, scss/_patterns.scss */
+.header--secondary, .form__title {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-family: monospace;
+  margin: 30px auto;
+  color: #ff5a59;
+  line-height: 1.4;
+}
+
+/* line 32, scss/_patterns.scss */
+.button--primary, .headline__cta, .form__submit {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1em;
+  color: #383030;
+  display: block;
+  background-color: #ff5a59;
+  border: none;
+  height: 40px;
+  width: 160px;
+  letter-spacing: 1px;
+  outline: none;
+  margin: auto;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+/* line 52, scss/_patterns.scss */
+.button--primary:hover, .headline__cta:hover, .form__submit:hover {
+  border: 1px solid #383030;
+  background-color: #fff;
+}
+
+/* line 59, scss/_patterns.scss */
+.form-section, .form__colors, .form__add-ons, .form__order-info {
+  border-top: 1px solid #d6caca;
+  padding: 0px 0 40px;
+}
+
+@font-face {
+  font-family: 'nickainley';
+  src: url(fonts/nickainley.otf);
+}
+/* line 8, scss/_styles.scss */
+a {
+  text-decoration: none;
+  color: #383030;
+  font-weight: bold;
+}
+/* line 13, scss/_styles.scss */
+a:hover {
+  text-decoration: none;
+  opacity: .6;
+  transition-duration: 800ms;
+}
+
+/* line 20, scss/_styles.scss */
+body {
+  font-size: 100%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  background-color: #fff2f2;
+  color: #383030;
+}
+
+/* line 35, scss/_styles.scss */
 .headline__slogan {
   font-family: monospace;
   text-align: center;
@@ -112,21 +156,21 @@ body {
   font-size: 1em;
   color: #e50c0c;
 }
-/* line 56, scss/_styles.scss */
+/* line 43, scss/_styles.scss */
 .headline__image-container {
   position: relative;
 }
-/* line 60, scss/_styles.scss */
+/* line 47, scss/_styles.scss */
 .headline__image {
   max-width: 1000px;
   width: 95%;
   margin: 20px auto 0;
   display: block;
 }
-/* line 67, scss/_styles.scss */
+/* line 54, scss/_styles.scss */
 .headline__info-window {
   display: none;
-  background-color: #fd7675;
+  background-color: #ff5a59;
   width: 220px;
   font-size: .7em;
   padding: 20px;
@@ -134,22 +178,22 @@ body {
   margin-top: -22%;
   left: 66%;
 }
-/* line 77, scss/_styles.scss */
+/* line 64, scss/_styles.scss */
 .headline__info-window .info-headline {
   font-weight: bold;
   display: inline-block;
   font-size: .9rem;
 }
-/* line 83, scss/_styles.scss */
+/* line 70, scss/_styles.scss */
 .headline__info-window .info-price {
   font-style: italic;
   opacity: .8;
 }
-/* line 88, scss/_styles.scss */
+/* line 75, scss/_styles.scss */
 .headline__info-window .info-text {
   padding: 5px 0;
 }
-/* line 95, scss/_styles.scss */
+/* line 82, scss/_styles.scss */
 .headline__info-icon {
   position: absolute;
   margin-top: -13%;
@@ -157,50 +201,27 @@ body {
   width: 7%;
   cursor: help;
 }
-/* line 104, scss/_styles.scss */
+/* line 91, scss/_styles.scss */
 .headline__info-icon:hover .st9 {
   fill: #fff;
   stroke: #383030;
   stroke-weight: 1px;
 }
-/* line 114, scss/_styles.scss */
+/* line 101, scss/_styles.scss */
 .headline__subtext-container {
   margin: auto;
   width: 80%;
   max-width: 560px;
 }
-/* line 120, scss/_styles.scss */
+/* line 107, scss/_styles.scss */
 .headline__subtext {
   line-height: 1.4em;
   padding: 10px 0 30px 0;
   font-size: .9em;
   text-align: center;
 }
-/* line 127, scss/_styles.scss */
-.headline__cta {
-  font-weight: 600;
-  text-align: center;
-  font-size: 1em;
-  display: block;
-  background-color: #fd7675;
-  border: none;
-  height: 40px;
-  width: 160px;
-  outline: none;
-  margin: auto;
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-style: italic;
-  cursor: help;
-  position: relative;
-  z-index: 100;
-}
-/* line 145, scss/_styles.scss */
-.headline__cta:hover {
-  border: 1px solid #383030;
-}
 
-/* line 154, scss/_styles.scss */
+/* line 122, scss/_styles.scss */
 .main-container {
   margin: auto;
   max-width: 1280px;
@@ -208,132 +229,178 @@ body {
   background: #fff;
 }
 
-/* line 166, scss/_styles.scss */
+/* line 134, scss/_styles.scss */
 .inside-container {
   max-width: 800px;
   margin: auto;
 }
 
-/* line 171, scss/_styles.scss */
+/* line 139, scss/_styles.scss */
 .header {
   text-align: center;
   height: 60px;
 }
 @media (min-width: 500px) {
-  /* line 171, scss/_styles.scss */
+  /* line 139, scss/_styles.scss */
   .header {
     height: 75px;
   }
 }
-/* line 179, scss/_styles.scss */
+/* line 147, scss/_styles.scss */
 .header__logo {
   width: 95px;
   margin-top: 9px;
 }
 @media (min-width: 500px) {
-  /* line 179, scss/_styles.scss */
+  /* line 147, scss/_styles.scss */
   .header__logo {
     width: 110px;
     margin-top: 15px;
   }
 }
 
-/* line 192, scss/_styles.scss */
+/* line 160, scss/_styles.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 199, scss/_styles.scss */
+/* line 167, scss/_styles.scss */
 .divider {
-  margin: 30px 0;
-  border-top: 1px dashed #000;
+  margin: 30px 0 0;
+  border-top: 2px dotted #383030;
 }
 
-/* line 204, scss/_styles.scss */
+/* line 172, scss/_styles.scss */
 .form {
   width: 85%;
   margin: auto;
   padding: 30px;
 }
-/* line 209, scss/_styles.scss */
-.form input[type="radio"] {
+/* line 177, scss/_styles.scss */
+.form input[type="radio"], .form input[type="checkbox"] {
   display: none;
 }
-/* line 213, scss/_styles.scss */
+/* line 182, scss/_styles.scss */
 .form input[type="radio"]:checked + label {
-  outline: 2px solid #000;
+  outline: 1px solid #383030;
 }
-/* line 218, scss/_styles.scss */
+/* line 186, scss/_styles.scss */
+.form input[type="checkbox"]:checked + label {
+  background-color: #383030;
+  color: #fff;
+  border-radius: 50px;
+}
+/* line 193, scss/_styles.scss */
+.form__checkbox-label {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: .8em;
+  letter-spacing: 1px;
+}
+/* line 208, scss/_styles.scss */
 .form__label {
-  display: block;
+  display: inline-block;
   padding: 5px;
   font-size: .8em;
-}
-/* line 224, scss/_styles.scss */
-.form__title {
-  font-size: 1.3em;
+  font-weight: bold;
   letter-spacing: 1px;
-  font-family: monospace;
-  margin: 0px auto 30px;
-  color: #e50c0c;
-  line-height: 1.4;
+  vertical-align: bottom;
 }
-/* line 233, scss/_styles.scss */
-.form__swatches, .form__add-ons {
-  margin: 15px 0;
+/* line 217, scss/_styles.scss */
+.form__select, .form__input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0;
+  border-bottom: 1px solid #383030;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 150px;
+  height: 30px;
+  padding: 0 5px 1px 5px;
+  color: #383030;
+  background: #fff;
+  font-size: .8em;
 }
-/* line 237, scss/_styles.scss */
+/* line 232, scss/_styles.scss */
+.form__select:focus, .form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #383030;
+}
+/* line 239, scss/_styles.scss */
+.form__select-wrapper {
+  display: inline-block;
+}
+/* line 242, scss/_styles.scss */
+.form__select-wrapper::after {
+  content: url(images/triangle-down-04.svg);
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+/* line 250, scss/_styles.scss */
+.form__group {
+  margin: 10px 0;
+}
+/* line 258, scss/_styles.scss */
 .form__color-group {
   float: left;
   width: 50%;
 }
 
-/* line 243, scss/_styles.scss */
+/* line 269, scss/_styles.scss */
+.tanya:after {
+  content: attr(test-attrt) " .";
+}
+
+/* line 275, scss/_styles.scss */
 .form__swatch-square, .swatch--yellow, .swatch--seafoam, .swatch--teal, .swatch--red, .swatch--pink, .swatch--black {
-  height: 30px;
-  width: 30px;
-  border: 2px solid #fff;
+  height: 28px;
+  width: 28px;
+  border: 3px solid #fff;
   display: inline-block;
   margin: 5px;
 }
-/* line 250, scss/_styles.scss */
+/* line 282, scss/_styles.scss */
 .form__swatch-square:hover, .swatch--yellow:hover, .swatch--seafoam:hover, .swatch--teal:hover, .swatch--red:hover, .swatch--pink:hover, .swatch--black:hover {
-  outline: 2px solid #383030;
+  outline: 1px solid #383030;
 }
 
-/* line 255, scss/_styles.scss */
+/* line 287, scss/_styles.scss */
 .swatch--yellow {
   background-color: #d3d400;
 }
 
-/* line 260, scss/_styles.scss */
+/* line 292, scss/_styles.scss */
 .swatch--seafoam {
   background-color: #aafffd;
 }
 
-/* line 265, scss/_styles.scss */
+/* line 297, scss/_styles.scss */
 .swatch--teal {
   background-color: #09dfff;
 }
 
-/* line 270, scss/_styles.scss */
+/* line 302, scss/_styles.scss */
 .swatch--red {
   background-color: #ff0000;
 }
 
-/* line 275, scss/_styles.scss */
+/* line 307, scss/_styles.scss */
 .swatch--pink {
   background-color: #ffc6ae;
 }
 
-/* line 280, scss/_styles.scss */
+/* line 312, scss/_styles.scss */
 .swatch--black {
   background-color: #383030;
 }
 
-/* line 288, scss/_styles.scss */
+/* line 323, scss/_styles.scss */
 .order {
   display: none;
   border: 1px solid #383030;
@@ -347,25 +414,25 @@ body {
   box-sizing: border-box;
   box-shadow: 6px 6px 0px 0px #383030;
 }
-/* line 301, scss/_styles.scss */
+/* line 336, scss/_styles.scss */
 .order__title {
   font-size: 1.3em;
   letter-spacing: 1px;
   font-family: monospace;
   margin: 30px auto;
   width: 80%;
-  color: #e50c0c;
+  color: #ff5a59;
   line-height: 1.4;
 }
 
-/* line 321, scss/_styles.scss */
+/* line 348, scss/_styles.scss */
 .footer {
   margin-top: 100px;
   height: 45px;
   background: #383030;
   color: #fff;
 }
-/* line 327, scss/_styles.scss */
+/* line 354, scss/_styles.scss */
 .footer__text {
   color: #A9A29D;
   text-align: center;
@@ -544,7 +611,7 @@ body {
 
 /* line 71, scss/_svg.scss */
 .awning {
-  fill: #09dfff;
+  fill: #fff;
 }
 
 /* line 76, scss/_svg.scss */

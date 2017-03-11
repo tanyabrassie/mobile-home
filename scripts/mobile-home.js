@@ -28,22 +28,35 @@ swatchOptions.change(function () {
 var $orderForm = $('#order-form');
 var $orderButton = $('#order-button');
 
-var flag = true;
+// var flag = true;
 
-$orderButton.click(function() {
+// $orderButton.click(function() {
 
-	if (flag) {
-		$orderForm.css("display", "block");
+// 	if (flag) {
+// 		$orderForm.css("display", "block");
+// 		$(this).css({"background": "#383030", "color": "#fff"});
+
+// 		flag = false;
+
+// 	} else {
+// 		$orderForm.css("display", "none");
+// 		$(this).css({"background": "#fd7675"});
+
+// 		flag = true;
+// 	}	
+
+// });
+
+
+$orderButton.click(function(){
+
+	if ($orderForm.is(":hidden")) {
+		$orderForm.slideDown("slow");
 		$(this).css({"background": "#383030", "color": "#fff"});
-
-		flag = false;
-
 	} else {
-		$orderForm.css("display", "none");
-		$(this).css({"background": "#fd7675"});
-
-		flag = true;
-	}	
+		$orderForm.slideUp("slow");
+		$(this).css({"background": "#fd7675"});	
+	}
 
 });
 
@@ -59,6 +72,8 @@ $infoIcon.mouseover(function(){
 $infoIcon.mouseout(function (){
 	$infoWindow.css("display", "none");
 });
+
+
 
 
 
